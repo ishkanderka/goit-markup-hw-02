@@ -7,6 +7,10 @@
   --button-normal-color: #4d5ae5;
   /* OCEAN */
   --button-hover-color: #404bbf;
+  /* CLOUD */
+  --light-mode-color: #f4f4fd;
+  /* CORNFLOWER */
+  --accent-color: #e7e9fc;
 }
 body {
   color: var(--body-text-color);
@@ -32,7 +36,7 @@ ul {
 }
 
 .logo-accent {
-  color: #4d5ae5;
+  color: var(--button-normal-color);
 }
 .link {
   text-decoration: none;
@@ -49,6 +53,7 @@ ul {
 .adress-links .link {
   font-size: 16px;
   line-height: 1.5;
+  font-style: normal;
 
   color: var(--body-text-color);
 }
@@ -72,7 +77,7 @@ ul {
   color: #ffffff;
 }
 
-.order-button {
+.order-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -85,7 +90,7 @@ ul {
   background-color: var(--button-normal-color);
 }
 
-.order-button:hover {
+.order-btn:hover {
   background-color: var(--button-hover-color);
 }
 
@@ -145,14 +150,15 @@ footer {
 }
 
 footer .logo {
-  color: #f4f4fd;
+  color: var(--light-mode-color);
 }
 .footer-description {
-  color: #e7e9fc;
+  color: var(--accent-color);
 }
 
 /* PORTFOLIO */
 .products-nav-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -161,8 +167,8 @@ footer .logo {
   cursor: pointer;
 
   color: var(--button-normal-color);
-  background-color: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background-color: var(--light-mode-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
