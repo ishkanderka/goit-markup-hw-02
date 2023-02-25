@@ -54,7 +54,8 @@ ul {
 }
 
 .nav-links .link:hover,
-.adress-links .link:hover {
+.adress-links .link:hover,
+.nav-links .active {
   color: var(--button-hover-color);
 }
 
