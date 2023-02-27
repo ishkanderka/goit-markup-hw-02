@@ -11,12 +11,16 @@
   --light-mode-color: #f4f4fd;
   /* CORNFLOWER */
   --accent-color: #e7e9fc;
+
+  /* WHITE-C */
+  --white-color: #fff;
 }
+
 body {
   color: var(--body-text-color);
-  background-color: #ffffff;
-  font-family: "Roboto", "Open Sans", "Noto Sans SC", sans-serif;
-  letter-spacing: 0.02em;
+  background-color: var(--white-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 .list {
@@ -38,22 +42,23 @@ body {
 .logo-accent {
   color: var(--button-normal-color);
 }
+
 .link {
   text-decoration: none;
 }
 
 .nav-links .link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 
   color: var(--body-text-color);
 }
 
 .adress-links .link {
-  font-size: 16px;
-  line-height: 1.5;
   font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
   color: var(--body-text-color);
 }
@@ -71,22 +76,22 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
 
   text-align: center;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .order-btn {
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.04em;
   cursor: pointer;
 
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--button-normal-color);
 }
 
@@ -108,43 +113,41 @@ body {
   overflow: hidden;
 }
 
-.projects h2,
-.team h2 {
+.section-title {
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
+  letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
 }
 
-.team h3,
-/* portfolio */
-.products-list h2 {
+.section-subtitle {
+  font-weight: 500px;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
 }
 
-.mission-description,
-.team-role,
 .footer-description,
-/* portfolio */
-.products-list p {
-  font-size: 16px;
+.section-text {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 
   color: var(--body-text-color);
 }
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light-mode-color);
 }
 
 .team-member {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
+
 footer {
   background-color: var(--secondary-text-color);
 }
@@ -152,6 +155,7 @@ footer {
 footer .logo {
   color: var(--light-mode-color);
 }
+
 .footer-description {
   color: var(--accent-color);
 }
@@ -160,7 +164,6 @@ footer .logo {
 .products-nav-btn {
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.04em;
@@ -174,6 +177,6 @@ footer .logo {
 
 .products-nav-btn:hover,
 .products-nav-btn:focus {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--button-hover-color);
 }
