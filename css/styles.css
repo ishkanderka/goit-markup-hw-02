@@ -64,8 +64,9 @@ body {
 }
 
 .nav-links .link:hover,
+.nav-links .link:focus,
 .adress-links .link:hover,
-.nav-links .active {
+.adress-links .link:focus {
   color: var(--button-hover-color);
 }
 
@@ -124,7 +125,7 @@ body {
 }
 
 .section-subtitle {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
